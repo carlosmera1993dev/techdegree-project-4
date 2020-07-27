@@ -1,0 +1,7 @@
+//Media query mixin
+
+@mixin break($point) {
+    @media (min-width: $point) {
+        @content;
+    }
+}

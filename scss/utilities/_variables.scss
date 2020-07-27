@@ -10,6 +10,28 @@ $secondary: #63cc82;
 $warning: #fd7856;
 $borders: #58e1c1;
 
+$extra-color-1: #deb2ee;
+$extra-color-2: #7ee6fd;
+$extra-color-3: #88d9a0;
+$extra-color-4: #4da2bb;
+$extra-color-5: #ec9fa3;
+$extra-color-6: #fd9f85;
+$extra-color-7: #80e8d1;
+
 //Breakpoints
 
 $med: 768px;
+
+//Values
+
+$flex-value: 8.33%;
+
+//Maps
+
+$btn-colors: (
+    'default': $primary,
+    'error': $error,
+    'info': $info,
+    'success': $secondary,
+    'warning': $warning,
+)
