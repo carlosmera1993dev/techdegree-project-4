@@ -25,8 +25,9 @@
   @each $name, $color in $btn-colors {
     .#{$name} {
       background-color: $color;
+      &:hover {
+        background-color: lighten($color, 15%);
+      }
     }
-    .#{$name}:hover {
-      background-color: lighten($color, 15%);
-    }
+    
   }
