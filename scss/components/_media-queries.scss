@@ -18,3 +18,19 @@
         margin-right: initial;
       }
 }
+
+@include break($med) {
+
+  @for $i from 1 through 12 {
+      @if $i == 1 {
+          .col-#{$i} {
+              flex-basis: $flex-value;
+          }
+      }
+      @else {
+          .col-#{$i} {
+              flex-basis: $flex-value * $i + 0.01;
+          }
+      }   
+  }
+}
